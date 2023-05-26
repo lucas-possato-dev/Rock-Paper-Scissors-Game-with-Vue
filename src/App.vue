@@ -60,9 +60,9 @@ const SaveGame = () => {
 };
 
 const LoadGame = () => {
-  wins.value = localStorage.getItem("wins");
-  draws.value = localStorage.getItem("draws");
-  losses.value = localStorage.getItem("losses");
+  wins.value = localStorage.getItem("wins") || 0;
+  draws.value = localStorage.getItem("draws") || 0;
+  losses.value = localStorage.getItem("losses") || 0;
 };
 
 const ResetRound = () => {
